@@ -32,12 +32,12 @@ def trade(events, strategy, execution):
 
 
 if __name__ == "__main__":
-    heartbeat = 0.5  # Half a second between polling
+    heartbeat = 45  # Half a second between polling
     events = Queue.Queue()
 
     # Trade 10000 units of EUR/USD
     instrument = "EUR_USD"
-    units = 10000
+    units = 3000
 
     # Create the OANDA market price streaming class
     # making sure to provide authentication commands

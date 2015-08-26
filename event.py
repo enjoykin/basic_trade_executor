@@ -1,3 +1,4 @@
+#from datetime import date
 class Event(object):
     pass
 
@@ -18,3 +19,13 @@ class OrderEvent(Event):
         self.units = units
         self.order_type = order_type
         self.side = side
+
+'''
+class DayEvent(Event):
+    def __init__(self, instrument, bid, ask):
+        self.type = 'DAY'
+        self.instrument = instrument
+        self.date = date.today()
+        self.bid = bid
+        self.ask = ask
+'''

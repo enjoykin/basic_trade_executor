@@ -48,3 +48,6 @@ class StreamingForexPrices(object):
                     ask = msg["tick"]["ask"]
                     tev = TickEvent(instrument, time, bid, ask)
                     self.events_queue.put(tev)
+                    
+    #import sys
+    #sys.exit()
